@@ -1,0 +1,15 @@
+[
+  {
+    "id": "ep-001",
+    "number": 1,
+    "title": "The Future of Indian Startups",
+    "description": "In this inaugural episode, we dive deep into the evolving landscape of Indian startups, discussing funding trends, market opportunities, and the unique challenges faced by founders in 2025.",
+    "videoId": "P2Y16vgpWxk",
+    "thumbnail": "https://i.ytimg.com/vi/P2Y16vgpWxk/maxresdefault.jpg",
+    "publishedAt": "2025-01-15T16:00:00+05:30",
+    "duration": "45:30",
+    "guests": ["guest-001", "guest-002"],
+    "isLive": false,
+    "tags": ["startups", "funding", "india"]
+  }
+]
