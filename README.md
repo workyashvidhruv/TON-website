@@ -1,2 +1,2 @@
-# TON-website
+# TONwebsite
 TON website
