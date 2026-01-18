@@ -10,13 +10,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        foreground: 'var(--foreground)',
-        background: 'var(--background)',
-        muted: 'var(--muted)',
-        accent: 'var(--accent)',
+        foreground: '#000000',
+        background: '#ffffff',
+        muted: '#666666',
+        'neutral-200': '#e5e5e5',
       },
       fontFamily: {
         mono: ['IBM Plex Mono', 'monospace'],
+      },
+      fontSize: {
+        'hero': ['40px', { lineHeight: '1.1' }],
+        'hero-sm': ['24px', { lineHeight: '1.2' }],
+        'section': ['35px', { lineHeight: '1.1' }],
+        'section-sm': ['18px', { lineHeight: '1.2' }],
+      },
+      borderRadius: {
+        'btn': '40px',
+        'icon': '10px',
       },
     },
   },

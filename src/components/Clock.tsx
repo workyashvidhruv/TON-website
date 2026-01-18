@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-export function Clock() {
+export default function Clock() {
   const [time, setTime] = useState<string>('');
 
   useEffect(() => {
@@ -25,9 +25,9 @@ export function Clock() {
   }, []);
 
   return (
-    <div className="font-mono text-sm">
-      <span className="text-muted">{time}</span>
-      <span className="text-muted ml-1">[IST]</span>
+    <div className="font-mono text-sm border border-black rounded-icon px-3 py-2">
+      <span>{time}</span>
+      <span className="ml-1 text-muted">[IST]</span>
     </div>
   );
 }
