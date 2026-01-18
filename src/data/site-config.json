@@ -1,0 +1,51 @@
+{
+  "siteName": "The Offline Network",
+  "tagline": "Real-time signal for India's tech world",
+  "description": "India's tech, decoded as it happens",
+  "brandPromise": "India's real tech pulse — unfiltered and on the clock",
+  "schedule": "Watch live: Mon | Wed | Fri at 4 PM",
+  "timezone": "IST",
+  "email": "live@theofflinenetwork",
+  "copyright": "© 2025 TON. All rights reserved.",
+  "currentVideoId": "P2Y16vgpWxk",
+  "social": {
+    "twitter": "https://twitter.com/OfflineOnAir",
+    "youtube": "https://youtube.com/@OfflineOnAir",
+    "instagram": "https://instagram.com/theofflinenetwork",
+    "linkedin": "https://linkedin.com/company/offlineonair",
+    "spotify": "https://open.spotify.com/show/6ssaSJTNdw8wIIzkh0v4lq",
+    "applePodcasts": "https://podcasts.apple.com/podcast/id1833151869",
+    "whatsapp": "https://chat.whatsapp.com/BK69EsNWP8BJIaoy3k7EfX"
+  },
+  "hosts": [
+    {
+      "name": "Utsav Somani",
+      "role": "CEO, Offline",
+      "image": "/images/hosts/utsav.jpg",
+      "twitter": "https://twitter.com/utsavsomani"
+    },
+    {
+      "name": "Dhruv Sharma",
+      "role": "CEO, AngelList India",
+      "image": "/images/hosts/dhruv.jpg",
+      "twitter": "https://twitter.com/dhruvsharma"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Equity List",
+      "logo": "/images/sponsors/equity-list.png",
+      "url": "https://equitylist.co"
+    },
+    {
+      "name": "Offline",
+      "logo": "/images/sponsors/offline.png",
+      "url": "https://offline.vc"
+    },
+    {
+      "name": "AngelList India",
+      "logo": "/images/sponsors/angellist.png",
+      "url": "https://angellist.in"
+    }
+  ]
+}

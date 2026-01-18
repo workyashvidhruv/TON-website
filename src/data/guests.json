@@ -1,0 +1,24 @@
+[
+  {
+    "id": "guest-001",
+    "name": "Kunal Shah",
+    "title": "Founder & CEO",
+    "company": "CRED",
+    "bio": "Kunal Shah is the founder and CEO of CRED, a fintech platform that rewards creditworthy individuals. Previously, he founded FreeCharge, which was acquired by Snapdeal.",
+    "image": "/images/guests/kunal-shah.jpg",
+    "twitter": "https://twitter.com/kunalb11",
+    "linkedin": "https://linkedin.com/in/kunalshah1",
+    "episodes": ["ep-001"]
+  },
+  {
+    "id": "guest-002",
+    "name": "Nithin Kamath",
+    "title": "Founder & CEO",
+    "company": "Zerodha",
+    "bio": "Nithin Kamath is the founder and CEO of Zerodha, India's largest stock broker. He bootstrapped the company to become a profitable unicorn without any external funding.",
+    "image": "/images/guests/nithin-kamath.jpg",
+    "twitter": "https://twitter.com/Nitaborthy",
+    "linkedin": "https://linkedin.com/in/nithinkamath",
+    "episodes": ["ep-001"]
+  }
+]
