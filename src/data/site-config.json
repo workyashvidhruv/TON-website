@@ -21,30 +21,30 @@
     {
       "name": "Utsav Somani",
       "role": "CEO, Offline",
-      "image": "/images/hosts/utsav.jpg",
+      "image": "/hosts/utsav.png",
       "twitter": "https://twitter.com/utsavsomani"
     },
     {
       "name": "Dhruv Sharma",
       "role": "CEO, AngelList India",
-      "image": "/images/hosts/dhruv.jpg",
+      "image": "/hosts/dhruv.png",
       "twitter": "https://twitter.com/dhruvsharma"
     }
   ],
   "sponsors": [
     {
       "name": "Equity List",
-      "logo": "/images/sponsors/equity-list.png",
+      "logo": "/made-possible-by/equity-list.png",
       "url": "https://equitylist.co"
     },
     {
       "name": "Offline",
-      "logo": "/images/sponsors/offline.png",
+      "logo": "/made-possible-by/offline.png",
       "url": "https://offline.vc"
     },
     {
       "name": "AngelList India",
-      "logo": "/images/sponsors/angellist.png",
+      "logo": "/made-possible-by/angel-list-india.png",
       "url": "https://angellist.in"
     }
   ]

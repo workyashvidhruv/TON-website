@@ -29,6 +29,13 @@ body {
   color: var(--foreground);
   background: var(--background);
   min-height: 100vh;
+  font-size: 14px;
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
 }
 
 a {
@@ -36,86 +43,97 @@ a {
   text-decoration: none;
 }
 
-/* Uppercase utility */
-.uppercase-text {
+/* Section label */
+.section-label {
+  font-size: 10px;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.2em;
+  color: var(--muted);
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--background);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--neutral-200);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--muted);
-}
-
-/* Divider */
-.divider {
-  border-color: var(--neutral-200);
-}
-
-/* Animation */
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
+@media (min-width: 1024px) {
+  .section-label {
+    font-size: 14px;
   }
 }
 
-.animate-pulse-slow {
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+/* Heading styles */
+.heading-lg {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
-/* Live indicator */
-.live-dot {
-  width: 8px;
-  height: 8px;
-  background-color: #ff0000;
-  border-radius: 50%;
-  animation: pulse 1.5s ease-in-out infinite;
+@media (min-width: 1024px) {
+  .heading-lg {
+    font-size: 40px;
+    line-height: 38px;
+  }
 }
 
-/* Button styles - matching original */
+.heading-md {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+  .heading-md {
+    font-size: 35px;
+  }
+}
+
+/* Button styles */
 .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   background-color: var(--foreground);
   color: var(--background);
-  padding: 0.5rem 1.5rem;
+  padding: 8px 24px;
+  font-size: 12px;
   font-weight: 500;
   border-radius: 40px;
   transition: all 0.3s ease;
   text-transform: uppercase;
-  font-size: 0.875rem;
   letter-spacing: 0.05em;
+  border: 1px solid var(--foreground);
+}
+
+@media (min-width: 1024px) {
+  .btn-primary {
+    font-size: 14px;
+  }
 }
 
 .btn-primary:hover {
-  opacity: 0.85;
+  background-color: var(--background);
+  color: var(--foreground);
 }
 
 .btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   border: 1px solid var(--foreground);
   background: transparent;
   color: var(--foreground);
-  padding: 0.5rem 1.5rem;
+  padding: 8px 24px;
+  font-size: 12px;
   font-weight: 500;
   border-radius: 40px;
   transition: all 0.3s ease;
   text-transform: uppercase;
-  font-size: 0.875rem;
   letter-spacing: 0.05em;
+}
+
+@media (min-width: 1024px) {
+  .btn-outline {
+    font-size: 14px;
+  }
 }
 
 .btn-outline:hover {
@@ -125,15 +143,21 @@ a {
 
 /* Icon button */
 .icon-btn {
-  width: 40px;
-  height: 40px;
-  border: 1px solid var(--foreground);
-  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 8px;
+  border: 1px solid var(--foreground);
+  border-radius: 10px;
   transition: all 0.3s ease;
   background: transparent;
+}
+
+@media (min-width: 768px) {
+  .icon-btn {
+    padding: 10px;
+    border-radius: 14px;
+  }
 }
 
 .icon-btn:hover {
@@ -141,44 +165,16 @@ a {
   color: var(--background);
 }
 
-/* Card styles */
-.card {
-  border: 1px solid var(--neutral-200);
-  padding: 1.5rem;
-  transition: all 0.2s ease;
+.icon-btn svg {
+  width: 16px;
+  height: 16px;
 }
 
-.card:hover {
-  border-color: var(--foreground);
-}
-
-/* Form styles for admin */
-.form-input {
-  background-color: transparent;
-  border: 1px solid var(--neutral-200);
-  padding: 0.75rem;
-  color: var(--foreground);
-  width: 100%;
-  font-family: 'IBM Plex Mono', monospace;
-  border-radius: 8px;
-}
-
-.form-input:focus {
-  outline: none;
-  border-color: var(--foreground);
-}
-
-.form-input::placeholder {
-  color: var(--muted);
-}
-
-.form-label {
-  font-size: 0.75rem;
-  color: var(--muted);
-  margin-bottom: 0.5rem;
-  display: block;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+@media (min-width: 1024px) {
+  .icon-btn svg {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 /* Video container */
@@ -199,28 +195,82 @@ a {
   border: none;
 }
 
-/* Section label */
-.section-label {
-  font-size: 0.625rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: var(--muted);
+/* Divider */
+.divider-vertical {
+  width: 1px;
+  height: 75%;
+  background-color: var(--neutral-200);
 }
 
-/* Host card */
+/* Host section border */
 .host-section {
   border-bottom: 1px solid var(--neutral-200);
 }
 
 @media (min-width: 1024px) {
-  .host-section:nth-child(odd) {
+  .host-section:first-child {
     border-right: 1px solid var(--neutral-200);
+  }
+  .host-section:last-child {
+    border-bottom: none;
   }
 }
 
-/* Sponsor divider */
-.sponsor-divider {
-  width: 1px;
-  background-color: var(--neutral-200);
-  height: 60px;
+/* Clock */
+.clock-display {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  padding: 8px 12px;
+  border: 1px solid var(--foreground);
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .clock-display {
+    font-size: 14px;
+    border-radius: 14px;
+  }
+}
+
+/* Form styles for admin */
+.form-input {
+  background-color: transparent;
+  border: 1px solid var(--neutral-200);
+  padding: 12px;
+  color: var(--foreground);
+  width: 100%;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--foreground);
+}
+
+.form-input::placeholder {
+  color: var(--muted);
+}
+
+.form-label {
+  font-size: 10px;
+  color: var(--muted);
+  margin-bottom: 8px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Card styles */
+.card {
+  border: 1px solid var(--neutral-200);
+  padding: 24px;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--foreground);
 }

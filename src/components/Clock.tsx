@@ -25,9 +25,9 @@ export default function Clock() {
   }, []);
 
   return (
-    <div className="font-mono text-sm border border-black rounded-icon px-3 py-2">
+    <div className="clock-display">
       <span>{time}</span>
-      <span className="ml-1 text-muted">[IST]</span>
+      <span className="text-muted">[IST]</span>
     </div>
   );
 }
